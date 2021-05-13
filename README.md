@@ -16,4 +16,11 @@ Pour ce projet en C++ nous devions créer le champ de mines du Démineur représ
  
  ### 3. Minesweeper.h
  
- 
+ ![image](https://user-images.githubusercontent.com/70451979/118103318-1286d200-b3da-11eb-9804-420b2fb3a192.png)
+
+Nous avons créé notre classe principale et les prototypes des méthodes. Maintenant nous allons passer aux méthodes dans Minesweeper.cpp
+
+### 4. Minesweeper.cpp
+
+#### 1. Constructeur et destructeur
+
