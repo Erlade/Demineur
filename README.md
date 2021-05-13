@@ -73,9 +73,9 @@ Et ainsi de suite.
 
 Voici les ressources utilisées pour ce projet :
 
-https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
-https://codes-sources.commentcamarche.net/source/49908-jeux-du-demineur-pour-debutant
-https://codereview.stackexchange.com/questions/141717/minesweeper-in-c
-https://www.geeksforgeeks.org/cpp-implementation-minesweeper-game/
-https://www.youtube.com/watch?v=UTnLo6RoBB8
-https://www.youtube.com/watch?v=9lMLWVO-WxY&t=468s
+https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o) <br/>
+https://codes-sources.commentcamarche.net/source/49908-jeux-du-demineur-pour-debutant <br/>
+https://codereview.stackexchange.com/questions/141717/minesweeper-in-c <br/>
+https://www.geeksforgeeks.org/cpp-implementation-minesweeper-game/ <br/>
+https://www.youtube.com/watch?v=UTnLo6RoBB8 <br/>
+https://www.youtube.com/watch?v=9lMLWVO-WxY&t=468s <br/>
