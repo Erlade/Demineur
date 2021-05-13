@@ -57,8 +57,8 @@ int Minesweeper::find_column(int a){
 }
 
 int Minesweeper::find_row(int a, int column){
-    //calculate the row by the given square number and the column
-    //we have to find_column in order to find_row
+    //calcule les lignes avec les nombres de carrés donnés et les colonnes
+    //on doit trouver column en premier pour pouvoir trouver row
     int row_of_it { ((a-column)/columns)+1 };
     return row_of_it;
 }
@@ -67,53 +67,53 @@ void Minesweeper::add_numbers(){
     // add numbers
     int column_of_the_bomb_real{};
     int row_of_the_bomb_real{};
-    int column_of_the_bomb{}; //for array starting at 0
-    int row_of_the_bomb{}; //for array starting at 0
+    int column_of_the_bomb{}; //pour l'array commençant par 0
+    int row_of_the_bomb{}; //pour l'array commençant par 0
 
     for(auto bomb: bombs){
-        //for each of the bombs
-        column_of_the_bomb_real = find_column(bomb); //find the column of the bomb
-        row_of_the_bomb_real = find_row(bomb, column_of_the_bomb_real); //find the row of the bomb
-        column_of_the_bomb = column_of_the_bomb_real-1; //for array starting at 0
-        row_of_the_bomb = row_of_the_bomb_real-1; //for array starting at 0
+        //pour chaque bombe
+        column_of_the_bomb_real = find_column(bomb); //trouver la colonne de la bombe
+        row_of_the_bomb_real = find_row(bomb, column_of_the_bomb_real); //trouver la ligne de la bombe
+        column_of_the_bomb = column_of_the_bomb_real-1; //pour l'array commençant par 0
+        row_of_the_bomb = row_of_the_bomb_real-1; //pour l'array commençant par 0
 
-        // add the numbers around each bomb
-        // if statements are checking for the edges of the table
-        // the areas around one bomb look like this:
+        // ajout des chiffres autour des bombes
+        // si les instructions vérifient les bords du plateau
+        // les zones autour des bombes ressemblent à ça :
         //   1 2 3
         //   4 * 5
         //   6 7 8
 
-        //for area "1"
-        if(row_of_the_bomb != 0 && column_of_the_bomb != 0) //check for edge
+        //pour la zone "1"
+        if(row_of_the_bomb != 0 && column_of_the_bomb != 0) //check du bord
             table[row_of_the_bomb-1][column_of_the_bomb-1] += 1;
 
-        //for area "2"
-        if(row_of_the_bomb != 0) //check for edge
+        //pour la zone "2"
+        if(row_of_the_bomb != 0) //check du bord
             table[row_of_the_bomb-1][column_of_the_bomb] += 1;
 
-        //for area "3"
-        if(row_of_the_bomb != 0 && column_of_the_bomb != columns-1) //check for edge
+        //pour la zone "3"
+        if(row_of_the_bomb != 0 && column_of_the_bomb != columns-1) //check du bord
             table[row_of_the_bomb-1][column_of_the_bomb+1] += 1;
 
-        //for area "4"
-        if(column_of_the_bomb != 0) //check for edge
+        //pour la zone "4"
+        if(column_of_the_bomb != 0) //check du bord
             table[row_of_the_bomb][column_of_the_bomb-1] += 1;
 
-        //for area "5"
-        if(column_of_the_bomb != columns-1) //check for edge
+        //pour la zone "5"
+        if(column_of_the_bomb != columns-1) //check du bord
             table[row_of_the_bomb][column_of_the_bomb+1] += 1;
 
-        //for area "6"
-        if(row_of_the_bomb != rows-1 && column_of_the_bomb != 0) //check for edge
+        //pour la zone "6"
+        if(row_of_the_bomb != rows-1 && column_of_the_bomb != 0) //check du bord
             table[row_of_the_bomb+1][column_of_the_bomb-1] += 1;
 
-        //for area "7"
-        if(row_of_the_bomb != rows-1) //check for edge
+        //pour la zone "7"
+        if(row_of_the_bomb != rows-1) //check du bord
             table[row_of_the_bomb+1][column_of_the_bomb] += 1;
 
-        //for area "8"
-        if(row_of_the_bomb != rows-1 && column_of_the_bomb != columns-1) //check for edge
+        //pour la zone "8"
+        if(row_of_the_bomb != rows-1 && column_of_the_bomb != columns-1) //check du bord
             table[row_of_the_bomb+1][column_of_the_bomb+1] += 1;
 
     }
@@ -122,13 +122,13 @@ void Minesweeper::add_numbers(){
 }
 
 void Minesweeper::show_table(){
-    //print the 2D vector table
+    //affiche le plateau de vecteur 2D
 
     int square_of_the_bomb{0};
 
     for (int r = 1; r <= rows; r++) {
         for (int c = 1; c <= columns; c++){
-            square_of_the_bomb = ((r-1)*columns)+c; // find the square of the bomb formula (by given row and column)
+            square_of_the_bomb = ((r-1)*columns)+c; 
             if( find(bombs.begin(), bombs.end(), square_of_the_bomb) != bombs.end() ){
                 //si le carré est une bombre, affiche *
                 cout << "*" << " ";
@@ -136,7 +136,7 @@ void Minesweeper::show_table(){
                 //si le carré est vide, affiche un espace vide
                 cout << "  ";
             }else{
-                //si le carré est un nombre, affiche le nombre
+                //si le carré est un chiffre, affiche le chiffre
                 cout << table[r-1][c-1] << " ";
             }
 
