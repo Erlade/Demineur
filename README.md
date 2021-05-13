@@ -1,26 +1,26 @@
 # Démineur
 Flambard Audrey, Mareschal Guillaume
 
-## 1. Qu'est ce qu'un démineur ?
+## I. Qu'est ce qu'un démineur ?
 
 Le Démineur est un jeu vidéo de réflexion dont le but est de localiser des mines cachées dans une grille représentant un champ de mines virtuel, avec pour seule indication le nombre de mines dans les zones adjacentes.
 
 Pour ce projet en C++ nous devions créer le champ de mines du Démineur représenté par une grille.
 
-## 2. Les étapes du projet
+## II. Les étapes du projet
 
  - Dans un premier temps il faut créer un vecteur 2D avec les lignes et colonnes données par l'utilisateur,
  - Ensuite, nous allons créer des bombes aléatoires,
  - Après cela, il faut ajouter les chiffres autour des bombes,
  - Pour finir, il faudra afficher le plateau dans l'invite de commandes.
 
- ## 3. Minesweeper.h
+ ## III. Minesweeper.h
  
  ![image](https://user-images.githubusercontent.com/70451979/118103318-1286d200-b3da-11eb-9804-420b2fb3a192.png)
 
 Nous avons créé notre classe principale et les prototypes des méthodes. Maintenant nous allons passer aux méthodes dans Minesweeper.cpp
 
-## 4. Minesweeper.cpp
+## IV. Minesweeper.cpp
 
 ### 1. Constructeur et destructeur
 ![image](https://user-images.githubusercontent.com/70451979/118103817-a193ea00-b3da-11eb-8ef4-2eb8c6545782.png)
@@ -60,7 +60,22 @@ Ici nous parcourons chacune des bombes dans le vecteur des bombes. Ensuite, nous
 Dans cette méthode nous affichons le vecteur dans l'invite de commande en vérifiant si le carré est une bombre, un chiffre ou vide. Ensuite, nous affichons les emmplacements des bombes. <br/>
 Maintenant nous sommes prêts à exécuter le programme avec main.cpp.
 
-## Main.cpp
+## V. Main.cpp
 ![image](https://user-images.githubusercontent.com/70451979/118110012-2f270800-b3e2-11eb-9be1-54359dea8ac6.png)
 
-Nous faisons une boucle infinie avec 5 secondes de sleep time pour voir à chaque fois de nouveaux plateaux aléatoires.
+Nous faisons une boucle infinie avec 5 secondes de sleep time pour voir à chaque fois de nouveaux plateaux aléatoires. <br/>
+Ce qui donne:
+![image](https://user-images.githubusercontent.com/70451979/118111533-1d466480-b3e4-11eb-8c3f-ffa4b3c204a4.png)
+![image](https://user-images.githubusercontent.com/70451979/118111578-30593480-b3e4-11eb-8307-12457dfe5517.png)
+Et ainsi de suite. 
+
+## VI. Ressources
+
+Voici les ressources utilisées pour ce projet :
+
+https://fr.wikipedia.org/wiki/D%C3%A9mineur_(genre_de_jeu_vid%C3%A9o)
+https://codes-sources.commentcamarche.net/source/49908-jeux-du-demineur-pour-debutant
+https://codereview.stackexchange.com/questions/141717/minesweeper-in-c
+https://www.geeksforgeeks.org/cpp-implementation-minesweeper-game/
+https://www.youtube.com/watch?v=UTnLo6RoBB8
+https://www.youtube.com/watch?v=9lMLWVO-WxY&t=468s
