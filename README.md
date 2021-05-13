@@ -23,4 +23,8 @@ Nous avons créé notre classe principale et les prototypes des méthodes. Maint
 ### 4. Minesweeper.cpp
 
 #### 1. Constructeur et destructeur
+![image](https://user-images.githubusercontent.com/70451979/118103817-a193ea00-b3da-11eb-8ef4-2eb8c6545782.png)
 
+Nous avons déclaré les constructeurs pour notre classe et initialisé les variables privées avec les valeurs données par l'utilisateur. Après ça, nous allons demander au programme d'exécuter les méthodes ci-dessous dans l'ordre.
+
+#### 2. Create_table
