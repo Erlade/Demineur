@@ -49,7 +49,8 @@ La formule find_row est [(square-column)/total_column]+1
 ### 5. Add_numbers
 
 ![image](https://user-images.githubusercontent.com/70451979/118108882-d1de8700-b3e0-11eb-8a3a-7c7a23a13f73.png)
-![image](https://user-images.githubusercontent.com/70451979/118108988-e9b60b00-b3e0-11eb-9b29-668860924cbd.png)
+![image](https://user-images.githubusercontent.com/70451979/118110732-13703180-b3e3-11eb-8566-37a36195ec51.png)
+
 
 Ici nous parcourons chacune des bombes dans le vecteur des bombes. Ensuite, nous calculons la ligne et la colonne de la bombe. Après cela, nous ajoutons +1 aux voisins de la bombe si le voisin n'est pas hors limites. 
 
