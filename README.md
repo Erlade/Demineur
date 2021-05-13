@@ -54,4 +54,7 @@ La formule find_row est [(square-column)/total_column]+1
 Ici nous parcourons chacune des bombes dans le vecteur des bombes. Ensuite, nous calculons la ligne et la colonne de la bombe. Après cela, nous ajoutons +1 aux voisins de la bombe si le voisin n'est pas hors limites. 
 
 #### 6. Show_table
+![image](https://user-images.githubusercontent.com/70451979/118109691-cfc8f800-b3e1-11eb-8ed0-5d87317d545f.png)
 
+Dans cette méthode nous affichons le vecteur dans l'invite de commande en vérifiant si le carré est une bombre, un chiffre ou vide. Ensuite, nous affichons les emmplacements des bombes. <br/>
+Maintenant nous sommes prêts à exécuter le programme avec main.cpp.
