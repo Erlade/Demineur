@@ -64,7 +64,7 @@ int Minesweeper::find_row(int a, int column){
 }
 
 void Minesweeper::add_numbers(){
-    // add numbers
+    // ajoute les chiffres
     int column_of_the_bomb_real{};
     int row_of_the_bomb_real{};
     int column_of_the_bomb{}; //pour l'array commençant par 0
