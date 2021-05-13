@@ -58,3 +58,8 @@ Ici nous parcourons chacune des bombes dans le vecteur des bombes. Ensuite, nous
 
 Dans cette méthode nous affichons le vecteur dans l'invite de commande en vérifiant si le carré est une bombre, un chiffre ou vide. Ensuite, nous affichons les emmplacements des bombes. <br/>
 Maintenant nous sommes prêts à exécuter le programme avec main.cpp.
+
+### Main.cpp
+![image](https://user-images.githubusercontent.com/70451979/118110012-2f270800-b3e2-11eb-9be1-54359dea8ac6.png)
+
+Nous faisons une boucle infinie avec 5 secondes de sleep time pour voir à chaque fois de nouveaux plateaux aléatoires.
