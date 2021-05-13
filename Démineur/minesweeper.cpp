@@ -85,7 +85,7 @@ void Minesweeper::add_numbers(){
         //   6 7 8
 
         //pour la zone "1"
-        if(row_of_the_bomb != 0 && column_of_the_bomb != 0) //check du bord
+        if(row_of_the_bomb != 0 && column_of_the_bomb != 0) //check des limites
             table[row_of_the_bomb-1][column_of_the_bomb-1] += 1;
 
         //pour la zone "2"
@@ -93,27 +93,27 @@ void Minesweeper::add_numbers(){
             table[row_of_the_bomb-1][column_of_the_bomb] += 1;
 
         //pour la zone "3"
-        if(row_of_the_bomb != 0 && column_of_the_bomb != columns-1) //check du bord
+        if(row_of_the_bomb != 0 && column_of_the_bomb != columns-1) //check des limites
             table[row_of_the_bomb-1][column_of_the_bomb+1] += 1;
 
         //pour la zone "4"
-        if(column_of_the_bomb != 0) //check du bord
+        if(column_of_the_bomb != 0) //check des limites
             table[row_of_the_bomb][column_of_the_bomb-1] += 1;
 
         //pour la zone "5"
-        if(column_of_the_bomb != columns-1) //check du bord
+        if(column_of_the_bomb != columns-1) //check des limites
             table[row_of_the_bomb][column_of_the_bomb+1] += 1;
 
         //pour la zone "6"
-        if(row_of_the_bomb != rows-1 && column_of_the_bomb != 0) //check du bord
+        if(row_of_the_bomb != rows-1 && column_of_the_bomb != 0) //check des limites
             table[row_of_the_bomb+1][column_of_the_bomb-1] += 1;
 
         //pour la zone "7"
-        if(row_of_the_bomb != rows-1) //check du bord
+        if(row_of_the_bomb != rows-1) //check des limites
             table[row_of_the_bomb+1][column_of_the_bomb] += 1;
 
         //pour la zone "8"
-        if(row_of_the_bomb != rows-1 && column_of_the_bomb != columns-1) //check du bord
+        if(row_of_the_bomb != rows-1 && column_of_the_bomb != columns-1) //check des limites
             table[row_of_the_bomb+1][column_of_the_bomb+1] += 1;
 
     }
