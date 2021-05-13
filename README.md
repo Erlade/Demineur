@@ -28,3 +28,8 @@ Nous avons créé notre classe principale et les prototypes des méthodes. Maint
 Nous avons déclaré les constructeurs pour notre classe et initialisé les variables privées avec les valeurs données par l'utilisateur. Après ça, nous allons demander au programme d'exécuter les méthodes ci-dessous dans l'ordre.
 
 #### 2. Create_table
+![image](https://user-images.githubusercontent.com/70451979/118104232-28e15d80-b3db-11eb-8491-3c47dfc5b681.png)
+
+Maintenant il faut ajouter des bombes aléatoires.
+
+### 3. Add_bombs
