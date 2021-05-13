@@ -35,8 +35,8 @@ Maintenant il faut ajouter des bombes aléatoires.
 #### 3. Add_bombs
 ![image](https://user-images.githubusercontent.com/70451979/118104644-ae650d80-b3db-11eb-9329-6194aba4a8b0.png)
 
-On crée un vecteur d'integers qui a la même taille que le plateau. Imaginons que la taille est de 20 lignes * 10 colonnes = 200. Alors notre vecteur devrait ressembler à : [1, 2, 3, 4 ... 200].
-Après il faut mélanger ce vecteur avec la fonction shuffle. On graine la fonction shuffle avec le système clock. Après le mélange imaginons que le vecteur est : [20, 32, 50, 120, 153 ... 1, 12]
+On crée un vecteur d'integers qui a la même taille que le plateau. Imaginons que la taille est de 20 lignes * 10 colonnes = 200. Alors notre vecteur devrait ressembler à : [1, 2, 3, 4 ... 200]. <br/>
+Après il faut mélanger ce vecteur avec la fonction shuffle. On graine la fonction shuffle avec le système clock. Après le mélange imaginons que le vecteur est : [20, 32, 50, 120, 153 ... 1, 12] <br/>
 Maintenant, imaginons que l'utilisateur a besoin de 3 bombes. Alors on prend les 3 premières valeurs du vecteur, qui sont ici [20, 32, 50]. Donc nous avons des bombes aux carrés numéro 20, 32 et 50.
 
 #### 4. Find_column/find_row
