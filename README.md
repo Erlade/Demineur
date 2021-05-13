@@ -43,7 +43,7 @@ Maintenant, imaginons que l'utilisateur a besoin de 3 bombes. Alors on prend les
 ![image](https://user-images.githubusercontent.com/70451979/118107656-53cdb080-b3df-11eb-901f-4e95f8ce8901.png)
 
 Nous devons trouver les colonnes en premier. <br/>
-La formule find_column est le résultat de (square/total_column). Mais si le carré est égal à total_column ce qui nous donnera l'output 0, puis on initialise la colonne du carré à total_column. <br/>
+La formule find_column est le résultat de (square/total_column). Mais si le carré est égal à total_column ce qui nous donnera l'output 0, alors on initialise la colonne du carré à total_column. <br/>
 La formule find_row est [(square-column)/total_column]+1
 
 #### 5. Add_numbers
