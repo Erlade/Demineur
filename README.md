@@ -1,5 +1,5 @@
 # Démineur
-Flambard Audrey, Mareschal Guillaume
+Mareschal Guillaume, Flambard Audrey
 
 ## I. Qu'est ce qu'un démineur ?
 
