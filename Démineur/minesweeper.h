@@ -29,7 +29,7 @@ private:
     void add_bombs(); //2. Création de bombes aléatoires
     void add_numbers();//3. Ajout des nombres autour des bombes
 
-    void show_table(); //4. Affiche le plateau dans le Command Prompt
+    void show_table(); //4. Affiche le plateau dans l'invite de commande
 
 public:
     Minesweeper(int columns_get=9, int rows_get=9, int bomb_count_get=10);
