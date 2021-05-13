@@ -36,17 +36,22 @@ Maintenant il faut ajouter des bombes aléatoires.
 ![image](https://user-images.githubusercontent.com/70451979/118104644-ae650d80-b3db-11eb-9329-6194aba4a8b0.png)
 
 On crée un vecteur d'integers qui a la même taille que le plateau. Imaginons que la taille est de 20 lignes * 10 colonnes = 200. Alors notre vecteur devrait ressembler à : [1, 2, 3, 4 ... 200]. <br/>
-Après il faut mélanger ce vecteur avec la fonction shuffle. On graine la fonction shuffle avec le système clock. Après le mélange imaginons que le vecteur est : [20, 32, 50, 120, 153 ... 1, 12] <br/>
+Après il faut mélanger ce vecteur avec la fonction shuffle. On amorce la fonction shuffle avec le système clock. Après le mélange imaginons que le vecteur est : [20, 32, 50, 120, 153 ... 1, 12] <br/>
 Maintenant, imaginons que l'utilisateur a besoin de 3 bombes. Alors on prend les 3 premières valeurs du vecteur, qui sont ici [20, 32, 50]. Donc nous avons des bombes aux carrés numéro 20, 32 et 50.
 
 #### 4. Find_column/find_row
 ![image](https://user-images.githubusercontent.com/70451979/118107656-53cdb080-b3df-11eb-901f-4e95f8ce8901.png)
 
-Nous devons trouver les colonnes en premier. <br/>
-La formule find_column est le résultat de (square/total_column). Mais si le carré est égal à total_column ce qui nous donnera l'output 0, alors on initialise la colonne du carré à total_column. <br/>
+Nous devons d'abord trouver la colonne sinon nous ne pouvons pas trouver la ligne. <br/>
+La formule find_column est le reste de (square/total_column). Mais si le carré est égal à total_column qui donnera l'output 0, alors nous définissons la colonne sur total_column. <br/>
 La formule find_row est [(square-column)/total_column]+1
 
 #### 5. Add_numbers
 
 ![image](https://user-images.githubusercontent.com/70451979/118108882-d1de8700-b3e0-11eb-8a3a-7c7a23a13f73.png)
+![image](https://user-images.githubusercontent.com/70451979/118108988-e9b60b00-b3e0-11eb-9b29-668860924cbd.png)
+
+Ici nous parcourons chacune des bombes dans le vecteur des bombes. Ensuite, nous calculons la ligne et la colonne de la bombe. Après cela, nous ajoutons +1 aux voisins de la bombe si le voisin n'est pas hors limites. 
+
+#### 6. Show_table
 
