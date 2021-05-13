@@ -64,9 +64,9 @@ Maintenant nous sommes prêts à exécuter le programme avec main.cpp.
 ![image](https://user-images.githubusercontent.com/70451979/118110012-2f270800-b3e2-11eb-9be1-54359dea8ac6.png)
 
 Nous faisons une boucle infinie avec 5 secondes de sleep time pour voir à chaque fois de nouveaux plateaux aléatoires. <br/>
-Ce qui donne:
+Ce qui donne: <br/>
 ![image](https://user-images.githubusercontent.com/70451979/118111533-1d466480-b3e4-11eb-8c3f-ffa4b3c204a4.png)
-![image](https://user-images.githubusercontent.com/70451979/118111578-30593480-b3e4-11eb-8307-12457dfe5517.png)
+![image](https://user-images.githubusercontent.com/70451979/118111578-30593480-b3e4-11eb-8307-12457dfe5517.png) <br/>
 Et ainsi de suite. 
 
 ## VI. Ressources
